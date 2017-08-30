@@ -75,7 +75,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinearList.cpp" />
+    <ClCompile Include="LinearList1.cpp" />
+    <ClCompile Include="LinearList2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinearList1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
