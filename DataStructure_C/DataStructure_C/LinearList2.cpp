@@ -70,7 +70,7 @@ int ListDelete(LinkList& L,int i,ElemType& x)
 	return OK;
 }
 
-int main()
+/*int main()
 {
 	LinkList L;
 
@@ -88,4 +88,4 @@ int main()
 	ShowList(L);
 
 	return 0;
-}
+}*/

@@ -78,6 +78,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryTree1.cpp" />
+    <ClCompile Include="BinaryTree2.cpp" />
     <ClCompile Include="LinearList1.cpp" />
     <ClCompile Include="LinearList2.cpp" />
   </ItemGroup>
