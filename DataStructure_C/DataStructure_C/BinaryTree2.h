@@ -1,3 +1,6 @@
+#include <stack>
+using namespace std;
+
 typedef struct BiNode {
 	char data;
 	struct BiNode *lChild, *rChild, *Parent;
@@ -35,7 +38,7 @@ void InOrderThreading(BiTree r, BiTree& tr);
 void InOrderTraverse_Thr(BiTree r);
 
 //œ»–Ú
-void PreThreading(BiTree rt, BiTree& pre;
+void PreThreading(BiTree rt, BiTree& pre);
 
 void PreOrderThreading(BiTree r, BiTree& tr);
 

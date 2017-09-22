@@ -27,6 +27,9 @@
     <ClCompile Include="BinaryTree2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Huffman.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinearList1.h">
