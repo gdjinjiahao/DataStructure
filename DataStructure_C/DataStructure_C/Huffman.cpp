@@ -113,7 +113,7 @@ int HuffmanCoding2(int n, PHNode HTree, char**& code)
 	}
 }
 
-int main()
+/*int main()
 {
 	double *w;
 	int n;
@@ -132,4 +132,4 @@ int main()
 		printf("%.2lf  %s\n", w[i], code[i]);
 	}
 	return 0;
-}
+}*/
