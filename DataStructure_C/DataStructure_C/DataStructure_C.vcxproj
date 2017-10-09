@@ -86,10 +86,12 @@
     <ClCompile Include="LinearList1.cpp" />
     <ClCompile Include="LinearList2.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
     <ClInclude Include="BinaryTree2.h" />
+    <ClInclude Include="Graph.h" />
     <ClInclude Include="LinearList1.h" />
     <ClInclude Include="Matrix.h" />
   </ItemGroup>

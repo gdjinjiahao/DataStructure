@@ -1,11 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include <queue>
-#include <vector>
-#include <algorithm>
-using namespace std;
+#include "Graph.h"
 
 //图节点均从1号开始编号
 /*
@@ -35,31 +28,6 @@ DAG:
 8 9 4
 */
 
-#define MAX_VERTEX_NUM 100
-#define MAX_EDGE_NUM 10000
-#define MAX_VALUE 0x7fffffff
-
-int vis[MAX_VERTEX_NUM];
-
-typedef struct ArcNode {
-	int v,w;
-	struct ArcNode *next;
-}ArcNode;
-
-typedef struct HeadNode {
-	int u, w;
-	ArcNode *arc;
-}HeadNode;
-
-typedef struct Graph {
-	int nv;//节点数
-	int ne;//边数
-	HeadNode *g;
-}Graph;
-
-typedef struct Triple {
-	int u, v, w;
-}Triple;
 
 int addedge(Graph g, int u, int v, int w)
 {
@@ -94,6 +62,7 @@ int CreateGraph(int n, int m, Graph& g)
 	return 1;
 }
 
+//遍历
 void dfs(Graph g, int u) 
 {
 	vis[u] = 1;
@@ -138,6 +107,7 @@ void BFSTraverse(Graph g)
 		bfs(g, i);
 }
 
+//最小生成树
 void Prim(Graph g)
 {
 	memset(vis, 0, sizeof(vis));
@@ -209,6 +179,7 @@ void Kruskal(int n,int m)
 	}
 }
 
+//拓扑排序
 void TopoSort(int n, int m)
 {
 	if (n > MAX_VERTEX_NUM) return;
@@ -249,6 +220,7 @@ void TopoSort(int n, int m)
 	}
 }
 
+//关键路径
 int CriticalPath_TopoSort(Graph g, int *ve, int *st)
 {
 	int in[MAX_VERTEX_NUM];
@@ -313,6 +285,7 @@ void CriticalPath(Graph g)
 	}
 }
 
+//Dijkstra
 void Dijkstra(Graph g, int ss)
 {
 	/*
@@ -327,7 +300,7 @@ void Dijkstra(Graph g, int ss)
 	4 6 10
 	*/
 	int dis[MAX_VERTEX_NUM];
-	int vis[MAX_VERTEX_NUM];
+	//int vis[MAX_VERTEX_NUM];
 	int pre[MAX_VERTEX_NUM];
 	memset(dis, -1, sizeof(dis));
 	memset(vis, 0, sizeof(vis));
@@ -369,6 +342,7 @@ void Dijkstra(Graph g, int ss)
 	}
 }
 
+//Floyd
 void getPath(int p[][MAX_VERTEX_NUM], int s, int e)
 {
 	if (p[s][e] == 0) {
