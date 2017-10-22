@@ -1,8 +1,3 @@
-﻿  Sort.cpp
-c:\users\administrator\documents\git\datastructure\datastructure_c\datastructure_c\sort.cpp(287): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
-c:\users\administrator\documents\git\datastructure\datastructure_c\datastructure_c\sort.cpp(288): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
-c:\users\administrator\documents\git\datastructure\datastructure_c\datastructure_c\sort.cpp(286): warning C4101: “temp”: 未引用的局部变量
+﻿  B-Tree.cpp
   DataStructure_C.vcxproj -> C:\Users\Administrator\Documents\Git\DataStructure\DataStructure_C\Debug\DataStructure_C.exe
   DataStructure_C.vcxproj -> C:\Users\Administrator\Documents\Git\DataStructure\DataStructure_C\Debug\DataStructure_C.pdb (Partial PDB)

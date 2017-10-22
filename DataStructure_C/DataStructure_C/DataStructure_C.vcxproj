@@ -79,6 +79,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Array.cpp" />
+    <ClCompile Include="B-Tree.cpp" />
+    <ClCompile Include="BalancedBinaryTree.cpp" />
+    <ClCompile Include="BinarySortTree.cpp" />
     <ClCompile Include="BinaryTree1.cpp" />
     <ClCompile Include="BinaryTree2.cpp" />
     <ClCompile Include="Graph.cpp" />
@@ -90,10 +93,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h" />
+    <ClInclude Include="BalancedBinaryTree.h" />
+    <ClInclude Include="BinarySortTree.h" />
     <ClInclude Include="BinaryTree2.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="LinearList1.h" />
     <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Sort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

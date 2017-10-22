@@ -1,14 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#define MAX_SIZE 1000
-#define MAX_VALUE 0x7fffffff
-
-//基数排序用到的链表节点定义
-typedef struct RSElem {
-	int e;
-	struct RSElem *next;
-}RSElem,*PRSElem;
+#include "Sort.h"
 
 int e[MAX_SIZE], n;
 
@@ -289,7 +279,7 @@ void RadixSort(int l,int r)
 1
 */
 
-int main()
+/*int main()
 {
 	int temp[MAX_SIZE];
 	while (scanf("%d", &n) == 1 && n > 0) {
@@ -320,4 +310,4 @@ int main()
 	}
 
 	return 0;
-}
+}*/
